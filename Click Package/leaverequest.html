@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBSS Admin</title>
+    <link rel="stylesheet" href="css/leaverq.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <!-- <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css"> -->
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="datetimepicker-master/build/jquery.datetimepicker.min.css">
+    <!-- <script src="datetimepicker-master/build/jquery.datetimepicker.full.js"></script> -->
+    <script src="datetimepicker-master/jquery.js"></script>
+  <script src="datetimepicker-master/build/jquery.datetimepicker.full.js"></script>
+  <!-- <script src="js/leaverq.js"></script> -->
+
+
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+    
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <!-- Navbar Search -->
+          <li class="nav-item">
+            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+              <i class="fas fa-search"></i>
+            </a>
+            <div class="navbar-search-block">
+              <form class="form-inline">
+                <div class="input-group input-group-sm">
+                  <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                  <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+      </nav>
+      <!-- /.navbar -->
+    
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4" id="maindiv">
+        <!-- Brand Logo -->
+        <a href="#" class="brand-link">
+          <img src="sbs-letter-original-monogram-logo-260nw-1714042396.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+          <span class="brand-text font-weight-light">SBSS HRMS</span>
+        </a>
+    
+        <!-- Sidebar -->
+        <div class="sidebar" style="background-color: black;">
+          <!-- Sidebar user panel (optional) -->
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <img src="Face_ID.png" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+              <a href="#" class="d-block">Saheb Pal</a>
+            </div>
+          </div>
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <!-- Add icons to the links using the .nav-icon class
+                   with font-awesome or any other icon font library -->
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active">
+                   <i class="fas fa-network-wired"></i>
+                  <p>
+                    Admin
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                      <i class="fas fa-tv"></i>
+                      <p>Dashboard</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                      <i class="fas fa-building"></i>
+                      <p>Company Structure</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="jobdetailssetup.html" class="nav-link">
+                      <i class="fas fa-columns"></i>
+                      <p>Job Details Setup</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-check-square"></i>
+                      <p>Qualification Setup</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-clipboard-list"></i>
+                      <p>Project</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-user-friends"></i>
+                      <p>Client</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-stopwatch"></i>
+                      <p>Overtime</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-align-left"></i>
+                      <p>Employee Fields</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-clipboard-list"></i>
+                      <p>Company Loans</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-code"></i>
+                      <p>Custom Fields</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-bars"></i>
+                  <p>
+                   Employees
+                   <i class="right fas fa-angle-left"></i>
+                    <!-- <span class="right badge badge-danger">New</span> -->
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                      <i class="fas fa-users"></i>
+                      <p>Employees</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-building"></i>
+                      <p>Document Management</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-suitcase-rolling"></i>
+                      <p>Travel Request</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-desktop"></i>
+                      <p>Monitor Attendence</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-file-signature"></i>
+                  <p>
+                    Admin Reports
+                    <i class="fas fa-angle-left right"></i>
+                    
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-book-open"></i>
+                      <p>Reports</p>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-chart-line"></i>
+                  <p>
+                    Insights
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-chart-bar"></i>
+                      <p>Company Insights</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-dollar-sign"></i>
+                  <p>
+                    Payroll
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-file-invoice-dollar"></i>
+                      <p>Salary</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-cogs"></i>
+                      <p>Payroll Reports</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-info-circle"></i>
+                  <p>
+                    Personal Information
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-tv"></i>
+                      <p>Dashboard</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-info"></i>
+                      <p>Basic Information</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-graduation-cap"></i>
+                      <p>Qualifications</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-hourglass-half"></i>
+                      <p>Dependents</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-phone-alt"></i>
+                      <p>Emergency Contacts</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-hourglass-half"></i>
+                  <p>
+                    Time Managemant
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-external-link-square-alt"></i>
+                      <p>Projects</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="timesheet.html" class="nav-link">
+                      <i class="fas fa-stopwatch"></i>
+                      <p>Punch In/Out</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-clock"></i>
+                      <p>Time Sheet</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-business-time"></i>
+                      <p>Overtime Requests</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-exclamation"></i>
+                  <p>
+                    User Reports 
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fab fa-dochub"></i>
+                  <p>
+                    Documents
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-external-link-square-alt"></i>
+                      <p>My Documents</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-rupee-sign"></i>
+                  <p>
+                    Finance
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-credit-card"></i>
+                      <p>Loans</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-cogs"></i>
+                  <p>
+                     System
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-cog"></i>
+                      <p>Settings</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-users-cog"></i>
+                      <p>Users</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-folder-open"></i>
+                      <p>Manage Modules</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-tasks"></i>
+                      <p>Manage Permissions</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-server"></i>
+                      <p>Manage Metadata</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-database"></i>
+                      <p>Data</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+    
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h3 class="m-0" style="text-align: inherit!important;">Loan</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+       
+        <div class="container-fluid">
+            <!-- Leave Request  -->
+            <div>
+                <p>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample" style="margin: 0px!important;">
+                        Leave Requests
+                    </button>
+                </p>
+            
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                          <div class="mb-3 col">
+                            <label for="amount" class="form-label">Employee ID</label>
+                            <input type="number" class="form-control" id="name" required>
+                        </div>
+                        <div class="row">
+                          <div class="mb-3 col inputwithicon" >
+                            <label for="startdate"class="form-label">Start Date</label>
+                            <input type="text" class="form-control" id="date1" required>
+                            <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                           
+                          </div>
+                          <div class="mb-3 col inputwithicon">
+                              <label for="enddate"class="form-label">End Date</label>
+                              <input type="text" class="form-control" id="date2" onblur="datediff()" required>
+                              <i class="far fa-calendar-alt" aria-hidden="true" ></i>
+                          </div>
+                            
+                            <div class="mb-3 col">
+                              <label for="details"class="form-label">No. of Leave</label>
+                              <input type="text" class="form-control" id="noleave" name="details">
+                            </div>
+                          </div>
+                         <div class="row">
+                            <div class="mb-3 col">
+                              <label for="leavetype"class="form-label">Leave Type</label>
+                              <select class="form-select" id="type"  onchange="noofleave()" onblur="subleave()">
+                                <option value="null" selected>Select Leave Type</option>
+                                  <option value="Sick">Sick Leave</option>
+                                  <option value="Casual">Casual Leave</option>
+                                  <option value="Paid">Paid Leave</option>
+          
+                              </select>
+                            </div>
+                            <div class="mb-3 col">
+                              <label for="totalleave"class="form-label">Total Leave</label>
+                              <input type="text" class="form-control" id="total" required  >
+                          </div>
+                          <div class="mb-3 col">
+                            <label for="subsistleave"class="form-label">Subsist Leave</label>
+                            <input type="text" class="form-control" id="subsist" required >
+                        </div>
+                        </div>
+                            <div class="col form-group">
+                              <label for="officetype"class="form-label">Take</label>
+                              <select class="form-select" id="officetype">
+                                <option selected>--Select--</option>
+                                <option value="None">None</option>
+                                <option value="All Half">All Half</option>
+                                <option value="Start Date Half">Start Date Half</option>
+                                <option value="End Date Half">End Date Half</option>
+                                <option value="Start and End Date Half">Start and End Date Half</option>
+          
+                              </select>
+                            </div>
+                            <div class="col form-group">
+                              <label for="officetype"class="form-label">Leave Reason Type</label>
+                              <select class="form-select" id="reason-type">
+                                <option selected>--Select--</option>
+                                <option value="1">Health</option>
+                                <option value="2">Travel</option>
+                                <option value="3">Casual</option>
+                                <option value="3">Other</option>
+          
+                              </select>
+                            </div>
+                            <div class="col form-group">
+                              <label for="details"class="form-label">Leave Reason</label>
+                              <textarea type="text" class="form-control" id="details"  required></textarea>
+                            </div>
+                            <!-- <div class="col form-group">
+                              <label for="details">Attachment</label>
+                              <input type="file" class="form-control" id="attachments"  required>
+                            </div> -->
+                              <button type="submit" id="apply" class="btn btn-primary">Apply</button>
+                        </form>
+                        <!-- JS for adding data in the record -->
+                        <script>
+                                   function onFormSubmit(){
+                                    var formData = readFormData();
+                                    insertNewRecord(formData);
+                                    resetForm();
+                                }
+
+                            function readFormData(){
+                                var formData= {};
+                                formData["Employee ID"] = document.getElementById("name").value;
+                                formData["Start Date"] = document.getElementById("date1").value;
+                                formData["End Date"] = document.getElementById("date2").value;
+                                formData["No.Of Leave"] = document.getElementById("noleave").value;
+                                formData["Leave Type"] = document.getElementById("type").value;
+                                formData["Total Leave"] = document.getElementById("total").value;
+                                formData["Subsist Leave"] = document.getElementById("subsist").value;
+                                formData["Take"] = document.getElementById("officetype").value;
+                                formData["Leave Reason Type"] = document.getElementById("reason-type").value;
+                                formData["Leave Reason "] = document.getElementById("details").value;
+                                //formData["Attachment"] = document.getElementById("attachments").value;
+                                formData["status"] = "Pending";
+                                return formData;
+                            }
+
+                            function insertNewRecord(data){
+                                var table = document.getElementById("loanApplyTable").getElementsByTagName('tbody')[0];
+                                var newRow= table.insertRow(table.length);
+                                cell1= newRow.insertCell(0); 
+                                cell1.innerHTML = data.name;
+                                cell2= newRow.insertCell(1); 
+                                cell2.innerHTML = data.date1;
+                                cell3= newRow.insertCell(2); 
+                                cell3.innerHTML = data.date2;
+                                cell4= newRow.insertCell(3); 
+                                cell4.innerHTML = data.noleave;
+                                cell5= newRow.insertCell(4); 
+                                cell5.innerHTML = data.type;
+                                cell6= newRow.insertCell(5); 
+                                cell6.innerHTML = data.total;
+                                cell7= newRow.insertCell(6); 
+                                cell7.innerHTML = data.subsist;
+                                cell8= newRow.insertCell(7); 
+                                cell8.innerHTML = data.officetype;
+                                cell9= newRow.insertCell(8); 
+                                cell9.innerHTML = data.reason-type;
+                                cell10= newRow.insertCell(9); 
+                                cell10.innerHTML = data.details;
+                                cell11= newRow.insertCell(10); 
+                                cell11.innerHTML = data.status;
+                                // cell12= newRow.insertCell(11); 
+                                // cell12.innerHTML = data.status;
+                            }
+
+                            function resetForm(){
+                                document.getElementById("name").value="";
+                                document.getElementById("date1").value="";
+                                document.getElementById("date2").value="";
+                                document.getElementById("noleave").value="";
+                                document.getElementById("type").value="";
+                                document.getElementById("total").value="";
+                                document.getElementById("subsist").value="";
+                                document.getElementById("officetype").value="";
+                                document.getElementById("reason-type").value="";
+                                document.getElementById("details").value="";
+                                document.getElementById("attachments").value="";
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="container loan-record-table" style="max-width: inherit!important;">
+                <table id="loanApplyTable" class="table table-striped table-bordered nowrap">
+                    <thead>
+                        <tr>
+                          <th>Employee ID</th>
+                          <th>Start Date</th>
+                          <th>End Date</th>
+                          <th>No.Of Leave</th>
+                          <th>Leave Type</th>
+                          <th>Total Leave</th>
+                          <th>Subsist Leave</th>
+                          <th>Take</th>
+                          <th>Leave Reason Type</th>
+                          <th>Leave Reason</th>
+                          <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+    
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </div>
+            <!-- END Loan Record Table -->
+        </div>
+        </div>
+    
+
+    
+  
+
+    
+        
+
+    </script> -->
+<script src="js/leaverq.js"></script>
+
+
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="dist/js/adminlte.js"></script>
+
+    
+    
+</body>
+</html>

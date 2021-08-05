@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HRMS</title>
+        <meta name="viewport" content="width-device-width">
+        <link rel="stylesheet" type="text/css" href="hrms.css">
+        <link rel="icon" href="FAVICON.png" type="image/jpeg">
+        <link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+
+        <script src="hrms.js"></script>
+        
+        
+    </head>
+    <body>
+        
+         
+         <div class="card"></div>
+        <div class="circle1"></div>  
+        <div class="circle2"></div>  
+        <div class="circle3"></div> 
+        <div id="col_hrm">Welcome to HRMS Application</div>
+        <div id="col_lg"><img type="image" src="hrms1.jpg" height="100px" width="100px"></div>
+        <div id="col_ds">Designed by Saheb Pal</div>
+        <div id="col_demo">@2021 Demo Use Only</div>
+
+
+
+        <!--Login Page Details-->
+        <form>
+            <div class="center">
+                <h2><center>Login</center></h2>
+            
+                <div class="text-field">
+                    <label class="text_area_up">Username:</label><input type="text" placeholder="Username" id="username" autofocus>
+                 </div>
+        
+                <div class="text-field">
+                    <label class="text_area_up">Password:
+                    </label><input type="password" placeholder="Password" id="password"><span><i class="fa fa-eye" id="eye" onclick="showpassword()"></i>
+                    </span>
+                 </div>   
+                <div class="button_box">   
+            
+                    <button type="submit"  id="toggle_btn" onclick="return validate()">Sign In</button>
+         
+                 </div>
+                <div id="button_box_reset">
+                    <!-- <button type="reset" id="toggle_reset">Reset</button> -->
+                </div>
+                <div class="forgot">Forget Password?</div>
+            </div>
+        
+         </form>
+     
+
+     </body>
+
+
+
+</html>

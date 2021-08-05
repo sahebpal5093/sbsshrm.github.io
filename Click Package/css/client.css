@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none!important;
+}
+body{
+    background-position: center;
+    /* background-color: rgb(37, 46, 43); */
+    background-size: cover;
+}
+.container{
+    width: 1250px;
+    height: auto;
+    /* margin: 8px auto; */
+    padding-left: 0;
+    padding-right: 0;
+    background: white;
+    background-color: white;
+    /* border-radius: 5px; */
+    position: relative;
+    overflow:auto;
+    display: block; 
+}
+h3{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #777;
+
+}
+#Form1{
+    width:100%;
+}
+.btn{
+    display: block!important;
+    /* width: 80px; */
+    /* height: 50px; */
+    margin: 80px auto;
+    text-align:center;
+    border-radius: 0px!important;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+#client{
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding: 10px 15px;
+    color: black!important;
+}
+/* #pr2{
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding: 10px 15px;
+    color: black!important;
+} */
+#tab-content .active{
+    display: block;
+    box-sizing: border-box;
+}
+.review{
+    position: relative;
+    margin: 0;
+    padding: 39px 19px 14px;
+    background-color:white;
+    border: 1px solid grey;
+}
+ .addcom{ 
+      display: inline-block!important;
+    /* width: 80px; */
+    /* height: 50px; */
+    margin: 80px auto;
+    text-align: left!important; 
+     border-radius: 0px!important;
+     align-items: initial!important; 
+    outline: none;
+    border: none;
+    left: 0px;
+    top: -110px!important;
+    position: relative; 
+ }
